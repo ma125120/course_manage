@@ -1,0 +1,131 @@
+﻿<!DOCTYPE html>
+<html lang="en" >
+<head >
+    <meta charset="UTF-8" >
+    <title >毕业设计课程管理 管理页面</title >
+    <link rel="stylesheet" href="css/common.css">
+    <script src="js/common/jq.js"></script>
+    <script src="js/index.js"></script>
+    <style >
+        body{margin-top:0;}html {font-size:16px;}#loginForm{margin:0 auto;line-height:2.4rem}#f_div form{min-height:300px}.login_ol{min-height:400px;overflow-y:auto}#ad_a{color:white}#ad_a:hover{color:black}.bor{margin:0}.bor:before{content:""}main{width:92%;margin:0 auto}#head{font-size:36px;vertical-align:center;text-align:center}#head:before{content:url('image/logo1.jpg');position:relative;top:12px}.notice{padding-left:10px;width:66%}.icon:before{position:relative;top:5px;padding-right:3px}#login_user:before{content:url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAABzElEQVRIS7WUvY3CQBCFZxAONjsSpFkSd3CU4BIowSW4BF8F5xKgA3dwXAVHCZcwK5FARgDaPY20RsZ4vXZwm3o83/y8eQj//HBsfmNM5px7l3hEPBDR95h/o4Dj8Vgi4hoRawD49UlT59wGEX+I6GMINAhg5goA9lprSf7ymHkDAJnWughBggBf+SGUvEkoEOfcerValX2QIICZa621VBh9zLxVShWLxeLSDe4FyEIBICWibTQ7AEgXiHghov1YQC4L7fuhDygFWWuzvjENdQBTAAKe0oHIsBhSR7sTURsiVkTUyPjxeWjJlVKq7FtcO/n5fH67Xq+V1lrG+vKCgNPptL7f73msC5FzkiT1crk8TAJIsDEmF42HIMxcePUE1Ra1Cn+txXw+L5oqjTGyo08A2MUOcRDgO8gQcdtViDe/HBG/iGg3ySr84qRt8SHxo+CTMYkfKaXyUZcs7Vtr6yRJ8tDiujQvCJFq3pXqy4iYed+e9xirkJgGorUWm+m/A5HcbDYTixjlQV247Mxam7Yt46kDqb5bwdgOmrhujgfAL7aMHVYM2LXuB2DIEWNJ29/9mPeNrJ86uN1u6VjlhKCy7HaO6CVPqb4v9g+9hPoZSumgtgAAAABJRU5ErkJggg==')}#notice_icon:before{content:url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAABUUlEQVRIS92Vz3WDMAzGJd98C0fLh3aEbtBuUEZIJ2g3aLoBbNBM0HSC0g0yQi7YRzjBze4Tj/DoHzAk6QW9xwWk7wefhIzwz4FT9YuiWNV1/cz5UsqXKIrKKbWTAcaYBAAeW9GUiJ4uDdgBwH0ruiWi9cUA7duveoLXAPBGRGkIErTIGPMKAOVPS/i+995rrR/GIIMAbmpVVR9CiFQpxZBfYYzhPsRSynio6R3AWsueXh1VnHMxImaIyN4PhnOO626EEF2ec26vtX7nogbA4t772Hu/D3k65Tki3gFAQkS7BpDn+UYIkSmlsikCoRzW4xyt9WaBgHYyjj9UyI1vzxFxyxO3cItmeTKQPGqRtZZn+PZE0CePegjAi4yvU+KglDost8n8eX9uzblesUWIyCs+aVZFe96yeP9Qmavbzy+llGte4cED5xxKt67PFRmr/wLFN9MZY+iclwAAAABJRU5ErkJggg==')}#intro{text-indent:2em;font-weight:normal;padding:5px 8px;min-height:640px}#intro_icon:before{content:url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAABdklEQVRIS82VzU3DQBCFZ7y+7In4EsneA6ECnAqADuiAUEHogNABHQAl0AFUACX4krHki83JPjgaNFIWxUsSbeJEyp7s/Zlv983sWyzLctA0zZSZr6FnY+bMGHO/Ggbn8/kMER97xv5bjog3cRx/2A4kIvlJtdajKIqqfUFE9AwA000ASJKkl0RWiZ0AeZ5PAODcPZVS6n04HH6v9u8FICKR7MwFMPOTMWa2DSDAIAgym4O1Ei0rLF0NpJSq3N3LuHsCImIA+NwK2CXh3oA8z0frdF8HU0r92NN4A4go8wUIFBEv4jjOvAFFUaSLxWLgK4+9VN4A38DuvNMBHD0HRHTLzJ3a3yQbIlZJkogHndA9OHqSl/Z95QnKtNZjsXnvKlr6ulcOAKDSWk92Anju/N80sXZmfgnDcCz2cXCzE6L4mNiGfHcAzHxpjIn23b27Tuymbdsva9evAHDHzBUidl6pHkD7/L6hPCp1XctlEZs+ZJMKe/gF+gFmjPiEpBAAAAAASUVORK5CYII=')}#false_ul li{line-height:40px}#false_ul li a{color:black;font-size:16px}.slider_parent{width:1200px;height:230px;overflow:hidden;margin:10px auto 0 auto}.slider_child{width:3225px;position:relative}.slider_child img{width:400px;height:230px;margin:0 -5px -5px 0}
+    </style >
+</head >
+<body >
+<div id="login">
+    <header>
+      <nav>
+          <ul id="teacher-ul" class='col-10'>
+             <span id="head" class="col-4">自动化系</span>
+             <li><a href="http://zdhx.tit.edu.cn/"  id="ad_a">系部首页</a></li>
+             <li>课程管理</li>
+             <li>实验管理</li>
+             <li>留言互动</li>
+             <li>教学资源</li>
+             <li>教学视频</li>
+          </ul>
+      </nav>
+    </header>
+<main>
+   <div class="container">
+       <div class="col-4" style="margin-left:18px;" id="f_div">
+         <div style="margin-bottom:10px;">
+             <p class="login cir1 col-12 icon" id="login_user">用户登录</p>
+             <form  id="loginForm" method="post" data-info="user,query,login">
+                 <label for="workSelect" class="col-4">登录身份：</label>
+                 <select id="workSelect" name="id_level" class="cir col-6">
+                     <option value="管理员">管理员</option>
+                     <option value="教师">教师</option>
+                     <option value="学生" selected>学生</option>
+                 </select>
+                 <br>
+                 <label  class="col-4">账户名：</label>
+                 <input type="text" name="username" class="cir col-6" placeholder="请输入你的用户名">
+                 <br>
+                 <label  class="col-4">密码：</label>
+                 <input type="password" name="password" class="cir col-6" placeholder="请输入你的密码">
+                 <br>
+                 <a href="#" class="reset_pwd" style="margin-left:4%;">忘记密码？</a>
+                 <input type="button"  class="cir col-10 submit" value="登录">
+                 <input type="reset" class="cir col-10" value="取消">
+             </form>
+             <form action="#" id="edit_form" class="hidden" data-info="user,edit,reset">
+                 <label  class="col-4">账户名：</label>
+                 <input type="text" name="username" class="cir col-6" >
+                 <br>
+                 <label  class="col-4">姓名：</label>
+                 <input type="text" name="real_name" class="cir col-6" >
+                 <br>
+                 <label  class="col-4">身份证：</label>
+                 <input type="text" name="id_card" class="cir col-6" >
+                 <br>
+                 <label  class="col-4">重置密码：</label>
+                 <input type="password" name="new_pwd" class="cir col-6 new_pwd" >
+                 <span></span>
+                 <br>
+                 <label  class="col-4">确认密码：</label>
+                 <input type="password" name="new_pwd1" class="cir col-6 new_pwd1" >
+                 <span></span>
+                 <br>
+                 <button  class="cir col-10 submit">确认</button >
+                 <button class="reset_pwd cir col-10" >返回登录</button>
+             </form>
+           </div>
+           <div style="font-size:20px">
+             <p class="login cir1 col-12 icon" id="intro_icon">系部介绍</p>
+             <div class="bor" id="intro" >
+               <p>本系建于2003年3月，是在我院进行系部调整时组建而成。其建设和发展历程可追朔到1979年，2001年9月开始本科教育。</p>
+               <p>目前在编教职员工32人，专任教师26人，校外兼职教师14人；教授2人、副教授3人，占专任教师总数的19％；博士3人、硕士22人，在读博士研究生1人，具有研究生学历的教师占专任教师总数的96％。承担或参与完成了国家级省部级和院级教研科研项目25项，申请专利9项；近年来已发表学术研究论文30余篇。</p>
+               <p>本系设有自动化、电气工程及其自动化二个本科专业，在籍学生1076人。</p>
+               <p>本系“自动化实验教学中心”内设系统仿真实训室、GE智能平台自动化系统集成实训室、GE智能平台自动化基础实训室、过程控制实训室、电机拖动实训室、供配电实训室、电气工程综合实训室、电力电子实训室、设备拆装实训室、电工基本操作技术实训室、自动化系统创新工作室，较好地满足了实验实训教学的需要。其中，由学院校和美国通用公司投资2500万元联合建造的GE自动化系统实训室是山西省最大的实训基地。<a href="http://zdhx.tit.edu.cn/djgz/jcjs.htm" target="_blank"> 查看更多</a></p>
+             </div>
+           </div>
+       </div>
+       <div id='query_notice_div' class="col-7 notice " >
+         <div id="main_pic">
+           <img src="image/first_1.jpg" alt="312" style="width:100%;opacity:0.85">
+         </div>
+         <!--
+         <div class="container">
+           <div class="col-5" style="margin:0;">
+             <div class="img_top">
+               <p class="login cir1 col-12 icon" id="notice_icon">系部动态</p>
+               <ul id="false_ul" class="bor">
+                 <li><a href="http://zdhx.tit.edu.cn/content.jsp?urltype=news.NewsContentUrl&wbtreeid=1009&wbnewsid=1582">1.太原工业学院党校第四十二期暨   第三分党校第一... </a></li>
+                 <li><a href="http://zdhx.tit.edu.cn/content.jsp?urltype=news.NewsContentUrl&wbtreeid=1009&wbnewsid=1581">2.自动化系防范不良网贷宣传资料</a></li>
+                 <li><a href="http://zdhx.tit.edu.cn/content.jsp?urltype=news.NewsContentUrl&wbtreeid=1009&wbnewsid=1580">3.太原工业学院2017年上半年组织发展日程安排</a></li>
+                 <li><a href="http://zdhx.tit.edu.cn/content.jsp?urltype=news.NewsContentUrl&wbtreeid=1009&wbnewsid=1579">4.2017年全院学生党员发展指导性计划</a></li>
+                 <li><a href="http://zdhx.tit.edu.cn/content.jsp?urltype=news.NewsContentUrl&wbtreeid=1009&wbnewsid=1001">5.院人事处莅临我系调研</a></li>
+               </ul>
+             </div>
+           </div>
+           <div class="col-6"> -->
+             <p class="login cir1 col-12 icon" id="notice_icon">查看公告</p>
+             <ol class="bor login_ol" style="margin-right: 0;"></ol>
+
+         </div>
+       </div>
+   </div>
+
+</main>
+    <form action='link.php' method='post' id='pre_form' class='hidden' target="_blank"></form>
+</div>
+
+<div class="slider_parent">
+  <div class="slider_child">
+      <img src="image/slider_1.jpg" alt="1">
+      <img src="image/slider_2.jpg" alt="2">
+      <img src="image/slider_3.jpg" alt="3">
+      <img src="image/slider_4.jpg" alt="4">
+      <img src="image/slider_5.jpg" alt="5">
+      <img src="image/slider_6.jpg" alt="6">
+  </div>
+</div>
+
+<footer>
+  <span class="col-2">太原工业学院</span>
+  <span class="col-5">地址：山西省太原市尖草坪区新兰路31号</span>
+  <span class="col-2">邮编：030008 </span>
+  <p >Copyright  @  All  Right </p>
+</footer>
+</body >
+</html >

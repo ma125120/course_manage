@@ -1,0 +1,404 @@
+﻿html {
+  font-family: "微软雅黑";
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  font-size: 14px
+}
+* {
+  margin: 0;
+  padding: 0;
+  line-height: 1.8rem;
+  box-sizing: border-box
+}
+input {
+  outline: none;
+  vertical-align: middle
+}
+.bg_gray, .main_info>div {
+  background: #F8F8F8
+}
+.main_info {
+  padding-left: 20px
+}
+.content_div {
+  height: 200px;
+  border: thin solid #999;
+  overflow-y: auto;
+  vertical-align: middle
+}
+.content_div:focus {
+  cursor: text
+}
+.cir1 {
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px
+}
+ul {
+  list-style: none
+}
+li {
+  cursor: pointer;
+  border-radius: 5px
+}
+div, table {
+  margin: 0 auto
+}
+textarea {
+  overflow-x: hidden;
+  overflow-y: auto
+}
+.cir {
+  border-radius: 10px;
+  display: inline-block
+}
+label, input, select {
+  display: inline-block;
+  line-height: 26px;
+  margin-top: 10px
+}
+select {
+  height: 30px;
+  font-size: 1rem
+}
+span, a {
+  display: inline-block
+}
+a {
+  text-decoration: none
+}
+label, input[type=button], input[type=reset] {
+  margin-left: 20px
+}
+label, textarea {
+  text-align: left
+}
+.col-1 {
+  width: 8.33%
+}
+.col-2 {
+  width: 16.66%
+}
+.col-3 {
+  width: 25%
+}
+.col-4 {
+  width: 33.3%
+}
+.col-5 {
+  width: 41.66%
+}
+.col-6 {
+  width: 50%
+}
+.col-7 {
+  width: 58.33%
+}
+.col-8 {
+  width: 66.66%
+}
+.col-9 {
+  width: 75%
+}
+.col-10 {
+  width: 83.33%
+}
+.col-11 {
+  width: 91.66%
+}
+.col-12 {
+  width: 100%
+}
+.print_div  p {
+  text-align: center
+}
+.print_div  p:nth-of-type(1) {
+  font-weight: bold;
+  font-size: 1.5rem;
+  margin: 10px 0
+}
+.l {
+  text-align: left
+}
+.r {
+  text-align: right
+}
+hr {
+  margin: 10px
+}
+.hidden {
+  display: none
+}
+span.success {
+  color: green;
+  height: 16px;
+  vertical-align: center;
+  font-size: 1rem
+}
+span.success:after {
+  content: '格式输入正确';
+  font-size: 1rem
+}
+span[class*=error] {
+  color: red
+}
+span.errorEmpty:after {
+  content: '输入不能为空'
+}
+span.errorFormat:after {
+  content: '输入格式错误'
+}
+.container {
+  display: -webkit-box;
+  display: flex;
+  height: 100%;
+  overflow: hidden;
+  overflow-y: auto;
+  display: -ms-flexbox;
+  margin: 0 0.5%
+}
+.float_l {
+  float: left
+}
+.float_l+div {
+  margin-right: 0
+}
+button, input[type=reset], input[type=button], .btn {
+  margin: 10px 20px;
+  padding: 5px;
+  background-color: rgba(11, 94, 165, 0.8);
+  color: white;
+  border-radius: 8px;
+  font-size: 1rem
+}
+input[type=submit]:disabled {
+  background-color: gray
+}
+.head {
+  background: #204040;
+  color: white;
+  text-align: center
+}
+.info {
+  width: 40%;
+  text-align: left;
+  margin-left: 20px
+}
+nav>ul>li {
+  display: inline-block;
+  position: relative
+}
+nav {
+  background: #009FE9;
+  margin-bottom: 10px;
+  color: white;
+  min-height: 120px
+}
+nav>ul {
+  line-height: 120px;
+  margin: 0 auto
+}
+nav>ul>li {
+  text-align: center;
+  vertical-align: middle;
+  padding: 10px;
+  margin: 0 5px 0 5px
+}
+nav>ul>li:hover, nav>ul>li:hover ul, .hov {
+  color: rgba(0, 0, 224, 0.5);
+  background: #deedf7
+}
+nav>ul li:hover ul {
+  display: table;
+  position: absolute;
+  left: 0;
+  top: 36px;
+  z-index: 5;
+  padding: 5px
+}
+nav>ul li:hover ul li {
+  display: inline-block;
+  line-height: 24px
+}
+nav>ul li:hover ul li:hover {
+  background: #009FE9;
+  color: white;
+  padding: 10px 4px
+}
+table {
+  border-collapse: collapse;
+  margin-top: 10px
+}
+th {
+  background: rgb(164, 164, 164)
+}
+tr:nth-child(odd) {
+  background: #EBEBEB
+}
+tr:nth-child(even) {
+  background: #DADADA
+}
+th, td {
+  text-align: center;
+  padding: 4px
+}
+.teacher_right {
+  margin-left: 10px
+}
+form {
+  border: thin solid #D1D1D1;
+  overflow-x: hidden;
+  overflow-y: hidden
+}
+main {
+  margin: 10px auto
+}
+#query_mail>div {
+  border: thin solid #D1D1D1;
+  height: 600px
+}
+.bor {
+  border: thin solid #D1D1D1;
+  margin: 8px 0;
+  text-indent: 8px;
+  font-weight: bold
+}
+.bor:before {
+  content: "--"
+}
+#show_mail0 {
+  margin-right: 2%;
+  overflow-y: auto
+}
+div ol li, input[type=file], .p_error {
+  padding-left: 20px
+}
+.p_error {
+  margin-top: 10px
+}
+.show_pg {
+  background: #E9E9F9
+}
+.login {
+  background: #3796E8;
+  color: white;
+  padding-left: 2%;
+  line-height: 30px
+}
+.reply_btn, .no_mar {
+  margin: 0
+}
+button a {
+  color: white;
+  text-decoration: none
+}
+.tr_bg {
+  background: #EBEBEB
+}
+.more {
+  width: 100%;
+  text-align: center;
+  background-color: rgba(11, 94, 165, 0.8);
+  color: white;
+  border-bottom-left-radius: 6px;
+  border-bottom-right-radius: 6px;
+  margin-top: 20px;
+  height: 28px;
+  line-height: 28px;
+  letter-spacing: 2px
+}
+.more:hover {
+  cursor: pointer
+}
+.under {
+  text-decoration: underline
+}
+.content_div ul {
+  padding-left: 30px
+}
+.content_div ul {
+  list-style-type: disc
+}
+.edit_able {
+  padding: 10px
+}
+.edit_able * {
+  vertical-align: middle
+}
+.edit_able button {
+  width: 20px;
+  line-height: 20px;
+  border-radius: 8px;
+  margin: 0;
+  background: #FAFAFA;
+  color: #606060;
+  border: 0;
+  font-size: 1rem
+}
+.edit_able button:hover {
+  background: #DBE4F1
+}
+.p_info {
+  position: fixed;
+  bottom: 0;
+  background: #E0F3ED;
+  width: 100%;
+  font-size: 1rem
+}
+.time_info {
+  position: absolute;
+  right: 30px
+}
+aside {
+  width: 200px;
+  font-size: 1rem;
+  text-align: left;
+  padding-left: 10px
+}
+aside h1 {
+  text-align: center
+}
+aside  ol {
+  background: #006ba4
+}
+aside a {
+  color: white
+}
+aside ol li {
+  padding-left: 6px;
+  line-height: 32px
+}
+ol {
+  list-style: inside decimal
+}
+footer {
+  color: white;
+  background: #3056EE;
+  line-height: 40px;
+  height: 80px;
+  font-size: 1rem;
+  text-align: center;
+  margin: 10px 0 30px 0
+}
+video {
+  width: 400px;
+  height: 400px;
+  margin: 0 auto;
+  border: thin solid gray
+}
+#video_div {
+  position: absolute;
+  right: 240px
+}
+@media screen and (max-width:900px) {
+  img {
+    width: 90%
+  }
+  .col-mb-12 {
+    width: 100%;
+    margin-left: 4%
+  }
+  .container {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap
+  }
+}
